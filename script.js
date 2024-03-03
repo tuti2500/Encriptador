@@ -36,3 +36,32 @@ function encriptar(stringEncriptada) {
 }
 
 
+
+function btnDesencriptar() {
+    const textoEncriptado = desencriptar(texArea.value);
+    mensaje.value = textoEncriptado;
+    texArea.value = "";
+
+  }
+
+
+function desencriptar(stringDesencriptada) {
+    let matrizCodigo = [
+      ["e", "enter"],
+      ["i", "imes"],
+      ["a", "ai"],
+      ["o", "ober"],
+      ["u", "ufat"],
+    ];
+    stringDesencriptada = stringDesencriptada.toLowerCase();
+  
+    for (let i = 0; i < matrizCodigo.length; i++) {
+      if (stringDesencriptada.includes(matrizCodigo[i][1])) {
+        stringDesencriptada = stringDesencriptada.replaceAll(
+          matrizCodigo[i][1],
+          matrizCodigo[i][0]
+        );
+      }
+    }
+    return stringDesencriptada;
+  }
