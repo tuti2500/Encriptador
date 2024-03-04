@@ -88,3 +88,10 @@ main {
   color: #495057;
   font-size: 18px;
 }
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
