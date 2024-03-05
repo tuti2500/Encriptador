@@ -1,4 +1,9 @@
 * {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+* {
   background: #f3f5fc;
   font-family: "Inter";
   font-weight: 400;
